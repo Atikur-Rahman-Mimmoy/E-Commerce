@@ -1,0 +1,21 @@
+POST http://localhost:7000/auth/login
+Content-Type: application/json
+
+{"username": "fahad@gmail.com", "password": "123"}
+
+###
+
+
+POST http://localhost:7000/auth/login
+Content-Type: application/json
+
+{"username": "fahad@gmail.com", "password": "123"}
+
+###
+
+
+POST http://localhost:7000/auth/RefreshToken
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZhaGFkQGdtYWlsLmNvbSIsInN1YiI6eyJyb2xlIjoiQWRtaW4ifSwiaWF0IjoxNzExMjU5MzM3LCJleHAiOjE3MTEyNjI5Mzd9.TS6vStm4youR-cr3_ktdNa8xww_FCktirXrNI9Dcva0
+
+###
