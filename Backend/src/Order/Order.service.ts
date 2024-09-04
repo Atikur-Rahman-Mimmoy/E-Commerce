@@ -42,12 +42,19 @@ export class OrderService {
       };
     }
 
-    if (!user.address || !user.phone) {
+    if (!user.address) {
       return {
-        message: 'Please complete your profile before placing an order.',
+        message: 'Address missing.Please fill up Address!',
         
       };
     }
+    if (!user.phone) {
+      return {
+        message: 'Phone number missing.Please fill up phone number!',
+        
+      };
+    }
+
 
     const order = await this.orderRepo.save(orderEntity);
 
